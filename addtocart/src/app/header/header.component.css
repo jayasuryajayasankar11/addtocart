@@ -1,0 +1,49 @@
+.header{
+    height: 90px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 27px rgba(0,0,0,.1);
+    background-color: aliceblue;
+    
+
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    align-items: center;
+}
+
+.header .right ul{
+    display: flex;
+    list-style-type: none;
+}
+
+.header .right ul li {
+    margin: 0 20px;
+}
+
+.header .right ul a{
+    text-decoration: none;
+    color:black;
+
+}
+.header .right ul img{
+    width: 100%;
+}
+
+.popbtn{
+    border: none;
+    background-color: aliceblue;
+    cursor: pointer;
+}
+
+.sidenav{
+    border: none;
+    background-color: aliceblue;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}

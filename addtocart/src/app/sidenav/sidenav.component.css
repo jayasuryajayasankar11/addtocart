@@ -1,0 +1,47 @@
+.mx-wd{
+    max-width: 1200px;
+    margin: 0 auto;
+   
+    
+}
+
+.sidenav{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 10px;
+    display: flex;
+    background: rgba(0, 0, 0, 0.5);
+
+    
+    
+   
+}
+
+.nav-in{
+    position: relative;
+    padding: 20px;
+    background-color:lightgray;
+    min-width: 350px;
+    box-shadow: 0 4px 27px rgba(0,0,0,.1);
+    text-align: center;
+}
+.sidenav-btn{
+    background-color: lightgray;
+    border: none;
+    cursor: pointer;
+}
+
+.nav-in button{
+    border-bottom: 1px solid black;
+}
+
+.nav-in ul{
+    list-style-type: none;
+    text-align: left;
+}
+
+.nav-in ul li{
+    padding: 15px;
+}

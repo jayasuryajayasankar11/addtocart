@@ -1,0 +1,26 @@
+<div class="container">
+  <div class="mx">
+    <div *ngFor="let data of arrobj" class="cards">
+
+      <div class="image"><img src="{{data.img}}" /></div>
+      <div class="cartbtn"> <button (click)="addtocart(data.name)"><img
+            src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/header_cart-eed150.svg"></button>
+      </div>
+      <div class="sec-half">
+        <h2>{{data.name}}</h2>
+        <div class="qp">
+          <p>0.25 Kg</p>
+          <p>Rs {{data.price}}</p>
+        </div>
+        <div class="addsub">
+          <button (click)="handleAddQ(data.name)">+</button>
+          <p>{{data.quantity * data.orderedq}} kg</p>
+          <button (click)="handlesubQ(data.name)">-</button>
+          <p>Rs {{data.price * data.orderedq }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <app-popup [arrobj]="arrobj"></app-popup>
+  <app-sidenav></app-sidenav>

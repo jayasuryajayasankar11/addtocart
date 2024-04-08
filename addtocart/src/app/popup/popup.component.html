@@ -1,0 +1,22 @@
+<div *ngIf="data">
+    <div class="popup">
+        <div class="popup-in">
+            <button class="closebtn" (click)="handleclose()">X</button>
+
+            <table>
+                <tbody *ngFor="let data of arrobj">
+                    <tr *ngIf="data.addtocart">
+                        <td><img class="popimg" src="{{data.img}}" /></td>
+                        <td>{{data.name}}</td>
+                        <button (click)="handleAddQ(data.name)">+</button>
+                        <td>{{data.quantity * data.orderedq}} Kg</td>
+                        <button (click)="handlesubQ(data.name)">-</button>
+                        <td>{{data.price * data.orderedq }} Rs</td>
+                    </tr>
+                </tbody>
+
+            </table>
+
+        </div>
+    </div>
+</div>

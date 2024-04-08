@@ -1,0 +1,92 @@
+
+.mx{
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    text-align: center;
+    justify-content: center;
+}
+
+
+
+.cards{
+
+    width: 250px;
+    height: 400px;
+    box-shadow: 0 4px 27px rgba(0,0,0,.1);
+    padding: 20px;
+    margin: 20px;
+    background-color:white;
+    border-radius: 5px;
+    position: relative;
+    
+}
+
+.image{
+    width: 250px;
+    height: 200px;
+    margin: auto;
+    background-color: white;
+    border-radius: 5px;
+ 
+}
+.image img{
+    width: 80%;
+    
+}
+.qp{
+    display: flex;
+    justify-content: space-between;
+    max-width: 150px;
+    margin: 0 auto;
+    
+    
+}
+
+
+
+
+.addsub{
+    display: flex;
+    justify-content: space-between;
+    max-width: 200px;
+    margin: 0 auto;
+    
+}
+
+.addsub button{
+    background-color: white;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+.addsub button:hover{
+    color: red;
+}
+
+.cartbtn button{
+    background: aqua;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+
+}
+
+.cartbtn button:hover{
+    background-color:red;
+}
+
+.cartbtn{
+    
+    position: absolute ;
+    right: 10px;
+    bottom: 200px;
+    
+    
+}
+
+
